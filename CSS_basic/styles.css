@@ -4,6 +4,8 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
 /* Apply Flexbox to the main container */
@@ -18,6 +20,7 @@ header, footer {
     background: #ccc;
     padding: 10px;
     text-align: center;
+    border-bottom: 2px solid #444;
 }
 
 article {
@@ -25,6 +28,8 @@ article {
     overflow-y: auto;
     background: #eaeaea;
     padding: 10px;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
 aside {
@@ -32,6 +37,8 @@ aside {
     overflow-y: auto;
     background: #f5f5f5;
     padding: 10px;
+    border-left: 1px solid #ddd;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
 }
 
 /* Ensure the article and aside take full height of main */
@@ -46,4 +53,29 @@ body, html {
 
 header, footer, article, aside {
     border: 1px solid #ddd;
+}
+.logo {
+    font-size: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Additional styling inside <article> */
+article h1 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+article p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Example of custom styling within article */
+article .custom-class {
+    color: #007BFF; /* Example custom color */
+    border: 1px solid #007BFF;
+    padding: 10px;
+    background-color: #e9f5ff;
 }
